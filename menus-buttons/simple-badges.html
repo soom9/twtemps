@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <header>
+      <div class="text-center text-4xl text-gray-800 font-bold mx-auto my-10">
+        Simple Badges
+      </div>
+    </header>
+
+    <main class="px-4 flex-grow flex justify-center items-center text-center container mx-auto  grid row-gap-4 grid-cols-1 w-full">
+
+      <div class="grid grid-cols-1 gap-4 w-full bg-white p-6 border border-gray-500 rounded-sm">
+
+        <div class="mb-8 text-left">
+          <h2 class="text-gray-700">Badges</h2>
+        </div>
+        <div class="text-left">
+            <span class="inline-block rounded-min text-gray-600 bg-gray-100 px-2 py-1 text-xs font-bold mr-3">Default</span>
+            <span class="inline-block rounded-min text-white bg-purple-500 px-2 py-1 text-xs font-bold mr-3">Primary</span>
+            <span class="inline-block rounded-min text-white bg-indigo-500 px-2 py-1 text-xs font-bold mr-3">Success</span>
+            <span class="inline-block rounded-min text-white bg-blue-500 px-2 py-1 text-xs font-bold mr-3">Info</span>
+            <span class="inline-block rounded-min text-white bg-yellow-500 px-2 py-1 text-xs font-bold mr-3">Warning</span>
+            <span class="inline-block rounded-min text-white bg-red-500 px-2 py-1 text-xs font-bold mr-3">Danger</span>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full bg-white p-6 border border-gray-500 rounded-sm">
+
+        <div class="mb-8 text-left">
+          <h2 class="text-gray-700">Pill</h2>
+        </div>
+        <div class="text-left">
+            <span class="inline-block rounded-full text-gray-600 bg-gray-100 px-2 py-1 text-xs font-bold mr-3">Default</span>
+            <span class="inline-block rounded-full text-white bg-purple-500 px-2 py-1 text-xs font-bold mr-3">Primary</span>
+            <span class="inline-block rounded-full text-white bg-indigo-500 px-2 py-1 text-xs font-bold mr-3">Success</span>
+            <span class="inline-block rounded-full text-white bg-blue-500 px-2 py-1 text-xs font-bold mr-3">Info</span>
+            <span class="inline-block rounded-full text-white bg-yellow-500 px-2 py-1 text-xs font-bold mr-3">Warning</span>
+            <span class="inline-block rounded-full text-white bg-red-500 px-2 py-1 text-xs font-bold mr-3">Danger</span>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full bg-white p-6 border border-gray-500 rounded-sm">
+
+        <div class="mb-8 text-left">
+          <h2 class="text-gray-700">Links</h2>
+        </div>
+        <div class="text-left">
+            <a href="#" class="inline-block rounded-full text-gray-600 bg-gray-100 px-2 py-1 text-xs font-bold mr-3">Default</a>
+            <a href="#" class="inline-block rounded-full text-white bg-purple-500 px-2 py-1 text-xs font-bold mr-3">Primary</a>
+            <a href="#" class="inline-block rounded-full text-white bg-indigo-500 px-2 py-1 text-xs font-bold mr-3">Success</a>
+            <a href="#" class="inline-block rounded-full text-white bg-blue-500 px-2 py-1 text-xs font-bold mr-3">Info</a>
+            <a href="#" class="inline-block rounded-full text-white bg-yellow-500 px-2 py-1 text-xs font-bold mr-3">Warning</a>
+            <a href="#" class="inline-block rounded-full text-white bg-red-500 px-2 py-1 text-xs font-bold mr-3">Danger</a>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full bg-white p-6 border border-gray-500 rounded-sm">
+
+        <div class="mb-8 text-left">
+          <h2 class="text-gray-700">Status Badge</h2>
+        </div>
+        <div class="text-left">
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-gray-400 p-1 text-xs font-bold mr-3"></span>
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-purple-400 p-1 text-xs font-bold mr-3"></span>
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-indigo-400 p-1 text-xs font-bold mr-3"></span>
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-blue-400 p-1 text-xs font-bold mr-3"></span>
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-yellow-400 p-1 text-xs font-bold mr-3"></span>
+            <span href="#" class="inline-block rounded-full bg-white border-4 border-red-400 p-1 text-xs font-bold mr-3"></span>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 w-full bg-white p-6 border border-gray-500 rounded-sm">
+
+        <div class="mb-8 text-left">
+          <h2 class="text-gray-700">List Media Status</h2>
+        </div>
+
+        <ul class="inline-block">
+
+          <li>
+            <div class="relative float-left mr-2 flex">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80" alt="" class="rounded-full w-16 h-16 object-cover">
+              <div class="top-0 absolute rounded-full w-5 h-5 bg-white inline-block flex justify-center items-center">
+                <span href="#" class="inline-block rounded-full bg-white border-4 border-red-400 p-1 text-xs"></span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="relative float-left mr-2 flex">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80" alt="" class="rounded-full w-16 h-16 object-cover">
+              <div class="bottom-0 absolute rounded-full w-5 h-5 bg-white inline-block flex justify-center items-center">
+                <span href="#" class="inline-block rounded-full bg-white border-4 border-yellow-400 p-1 text-xs"></span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="relative float-left mr-2 flex">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80" alt="" class="rounded-full w-16 h-16 object-cover">
+              <div class="left-0 absolute rounded-full w-5 h-5 bg-white inline-block flex justify-center items-center">
+                <span href="#" class="inline-block rounded-full bg-white border-4 border-blue-400 p-1 text-xs"></span>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="relative float-left mr-2 flex">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1404&q=80" alt="" class="rounded-full w-16 h-16 object-cover">
+              <div class="right-0 absolute rounded-full w-5 h-5 bg-white inline-block flex justify-center items-center">
+                <span href="#" class="inline-block rounded-full bg-white border-4 border-purple-400 p-1 text-xs"></span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </main>
+</body>
+</html>

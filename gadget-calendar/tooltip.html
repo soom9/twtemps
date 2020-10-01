@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <style>
+  .bottom-full{bottom: 100%}
+  .top-full{top: 100%}
+</style>
+<div class="flex">
+  <div class="relative mx-2">
+    <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
+      Tooltip left
+      <svg class="absolute text-black h-2 left-0 ml-3 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
+    </div>
+  </div>
+  <div class="relative mx-2">
+    <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
+      Tooltip center
+      <svg class="absolute text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
+    </div>
+  </div>
+  <div class="relative mx-2">
+    <div class="bg-black text-white text-xs rounded py-1 px-4 right-0 bottom-full">
+      Tooltip right
+      <svg class="absolute text-black h-2 right-0 mr-3 top-full" x="0px" y="0px" viewBox="0 0 255 255" xml:space="preserve"><polygon class="fill-current" points="0,0 127.5,127.5 255,0"/></svg>
+    </div>
+  </div>
+</div>
+</body>
+</html>

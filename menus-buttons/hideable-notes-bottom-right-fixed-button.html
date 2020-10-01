@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div class="h-screen"> 
+<div class="fixed bottom-0 right-0 w-16 h-16 mr-12 mb-8 cursor-pointer" id="box_btn">
+                        <img src="https://devrolabs.com/image/tabnote.png">
+                    </div>
+                    <div id="note_box"
+                        class="hidden rounded-lg bg-white shadow-xl fixed bottom-0 right-0 w-64 h-64 mr-12 mb-32">
+                        <div class="bg-gray-900 text-white text-xl p-2 cursor-pointer rounded-lg" onclick="close_note()">NOTES</div>
+                        <div class="p-2">
+                            <textarea class="bg-gray-100 w-full h-32 p-2 focus:outline-none"
+                                placeholder="Write here !"></textarea>
+                        </div>
+                        <button class="bg-teal-500 text-white p-2 mx-2 absolute right-0">SAVE</button>
+                    </div>
+</div>
+  <script>
+var note_box = document.getElementById("note_box");
+        var box_btn = document.getElementById("box_btn");
+                box_btn.addEventListener("click", () => {
+            console.log("clicked");
+            console.log(note_box.style.display);
+            if (note_box.classList.contains("hidden"))
+            {
+                note_box.classList.remove("hidden");
+            }
+            else
+                note_box.classList.add("hidden");
+        });
+        function close_note()
+        {
+            note_box.classList.add("hidden");
+        }
+</script>
+</body>
+</html>
